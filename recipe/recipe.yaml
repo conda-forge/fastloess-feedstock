@@ -167,8 +167,22 @@ about:
     - LICENSE-MIT
     - LICENSE-APACHE
   summary: High-performance LOESS smoothing
-  description: The fastest, most robust, and most feature-complete language-agnostic LOESS (Locally Estimated Scatterplot Smoothing) implementation.
-  documentation: https://loess.readthedocs.io/
+  description: |
+    The fastest, most robust, and most feature-complete language-agnostic LOESS (Locally Estimated Scatterplot Smoothing) implementation.
+
+    FastLOESS is a native implementation of LOESS (locally estimated
+    scatterplot smoothing), a local-polynomial method for modeling trends in
+    noisy data. Unlike one-dimensional LOWESS, LOESS supports predictors in
+    multiple dimensions and polynomial degrees from 0 through 4.
+
+    This recipe provides three conda packages: fastloess for Python,
+    r-rfastloess for R, and libfastloess for C++. Features include robust
+    reweighting, configurable kernels and distance metrics, boundary policies,
+    and parallel CPU fitting. Supported bindings also provide streaming,
+    online, prediction, and cross-validation workflows.
+
+    See the project documentation for language-specific installation and usage.
+  documentation: https://thisisamirv.github.io/loess-project/
   repository: https://github.com/thisisamirv/loess-project
 
 extra:
